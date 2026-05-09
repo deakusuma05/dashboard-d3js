@@ -21,7 +21,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none !important;
 }
 
 body {
@@ -32,42 +31,6 @@ body {
     min-height: 100vh;
     overflow-y: auto;
     overflow-x: auto;
-    cursor: none;
-    /* Custom cursor */
-}
-
-a,
-button,
-input,
-label,
-.custom-checkbox {
-    cursor: none;
-    /* Override pointers for custom cursor */
-}
-
-#cloud-cursor {
-    position: fixed;
-    top: -50px;
-    /* hidden initially */
-    left: -50px;
-    width: 48px;
-    height: 48px;
-    background-image: url('cloud.jpg');
-    border-radius: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-30%, -20%);
-    transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    will-change: top, left, transform;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
-}
-
-#cloud-cursor.pressing {
-    transform: translate(-30%, -20%) scale(0.7);
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)) brightness(0.8);
 }
 
 /* Drag Hint Text inside Cards */

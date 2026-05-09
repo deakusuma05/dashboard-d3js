@@ -57,7 +57,6 @@ onFilterChange(() => {
 
 async function init() {
     setupFilters();
-    setupCustomCursor();
     
     makeDraggable('.overview-card');
     makeDraggable('.legend-card');
@@ -92,39 +91,6 @@ async function init() {
     } catch (error) {
         document.getElementById("chart-container").innerHTML = `<div style="color: red; padding: 20px;">Error loading data: ${error.message}</div>`;
     }
-}
-
-function setupCustomCursor() {
-    const cursor = document.getElementById('cloud-cursor');
-    if (!cursor) return;
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let isMoving = false;
-
-    // Track mouse movement
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        
-        if (!isMoving) {
-            isMoving = true;
-            requestAnimationFrame(() => {
-                // GPU-accelerated movement instead of CPU-heavy left/top reflows
-                cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-30%, -20%)`;
-                isMoving = false;
-            });
-        }
-    });
-
-    // Add pressing animation
-    document.addEventListener('mousedown', () => {
-        cursor.classList.add('pressing');
-    });
-
-    document.addEventListener('mouseup', () => {
-        cursor.classList.remove('pressing');
-    });
 }
 
 function makeDraggable(selector) {
