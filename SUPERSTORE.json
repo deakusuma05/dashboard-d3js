@@ -1,0 +1,457 @@
+{
+  "name": "Superstore Sales",
+  "children": [
+    {
+      "name": "2023",
+      "children": [
+        {
+          "name": "Q1",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 511.17
+                },
+                {
+                  "name": "Storage",
+                  "value": 2756.71
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 1521.56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q2",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1188.53
+                },
+                {
+                  "name": "Storage",
+                  "value": 3795.01
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 6305.24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q3",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1122.84
+                },
+                {
+                  "name": "Storage",
+                  "value": 8661.1
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 9561.73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q4",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1377.97
+                },
+                {
+                  "name": "Storage",
+                  "value": 12757.76
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 20683.41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2024",
+      "children": [
+        {
+          "name": "Q1",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 564.41
+                },
+                {
+                  "name": "Storage",
+                  "value": 2372.64
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 6532.19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q2",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1056.16
+                },
+                {
+                  "name": "Storage",
+                  "value": 4848.39
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 9735.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q3",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1421.81
+                },
+                {
+                  "name": "Storage",
+                  "value": 13846.71
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 12528.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q4",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1687.22
+                },
+                {
+                  "name": "Storage",
+                  "value": 10627.69
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 16881.52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2025",
+      "children": [
+        {
+          "name": "Q1",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 493.05
+                },
+                {
+                  "name": "Storage",
+                  "value": 4629.01
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 7212.48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q2",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1052.23
+                },
+                {
+                  "name": "Storage",
+                  "value": 8066.68
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 8943.58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q3",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1293.55
+                },
+                {
+                  "name": "Storage",
+                  "value": 8215.99
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 13042.21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q4",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1524.77
+                },
+                {
+                  "name": "Storage",
+                  "value": 9835.01
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 13509.89
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2026",
+      "children": [
+        {
+          "name": "Q1",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1073.7
+                },
+                {
+                  "name": "Storage",
+                  "value": 6792.62
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 12495.55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q2",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1745.06
+                },
+                {
+                  "name": "Storage",
+                  "value": 10560.55
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 8762.69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q3",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 1994.59
+                },
+                {
+                  "name": "Storage",
+                  "value": 9820.07
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 13960.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Q4",
+          "children": [
+            {
+              "name": "Office Supplies",
+              "children": [
+                {
+                  "name": "Art",
+                  "value": 2364.76
+                },
+                {
+                  "name": "Storage",
+                  "value": 16980.18
+                }
+              ]
+            },
+            {
+              "name": "Technology",
+              "children": [
+                {
+                  "name": "Phones",
+                  "value": 19258.16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstore Cloud Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cloud-cursor"></div>
+    <div class="dashboard-container">
+        
+        <!-- Floating Top Navigation -->
+        <header class="top-bar">
+            <div class="brand">
+                <svg class="cloud-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 17.5C4.01472 17.5 2 15.4853 2 13C2 10.741 3.66314 8.8711 5.83401 8.55248C6.39864 5.95252 8.70588 4 11.5 4C14.7303 4 17.4243 6.30232 17.9157 9.35639C20.218 9.61058 22 11.5977 22 14C22 16.4853 19.9853 18.5 17.5 18.5H6.5Z" fill="#FFFFFF"/>
+                </svg>
+                <h1>Superstore Cloud Explorer</h1>
+            </div>
+            <div class="header-actions">
+                <a href="https://github.com/deakusuma05" target="_blank" class="github-link" title="Visit GitHub Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <button id="filter-toggle-btn" class="filter-toggle-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                    FILTER DATA
+                </button>
+            </div>
+        </header>
+
+        <!-- Filter Dropdown Popup -->
+        <div id="filter-dropdown" class="filter-dropdown hidden">
+            <div class="filter-dropdown-header">
+                <h3>Adjust Data</h3>
+                <button id="reset-btn" class="reset-btn">Reset All</button>
+            </div>
+            <div class="filter-dropdown-content">
+                
+                <div class="filter-group">
+                    <h3>REGION</h3>
+                    <div class="checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="region-filter" value="Central" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Central</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="region-filter" value="East" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">East</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="region-filter" value="South" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">South</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="region-filter" value="West" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">West</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>YEAR</h3>
+                    <div class="checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="year-filter" value="2023" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">2023</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="year-filter" value="2024" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">2024</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="year-filter" value="2025" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">2025</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="year-filter" value="2026" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">2026</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>PRODUCT CATEGORY</h3>
+                    <div class="checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="category-filter" value="Furniture" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Furniture</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="category-filter" value="Office Supplies" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Office</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="category-filter" value="Technology" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Tech</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>SUB-CATEGORY</h3>
+                    <div class="checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="subcategory-filter" value="Art" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Art</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="subcategory-filter" value="Storage" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Storage</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="subcategory-filter" value="Phones" checked>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Phones</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>MINIMUM SALES ($)</h3>
+                    <div class="range-slider-container">
+                        <span id="range-val">Min: $0</span>
+                        <input type="range" id="sales-range" min="0" max="25000" step="500" value="0" class="slider">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Floating Overview Card -->
+        <div class="overview-card">
+            <div class="drag-hint">Tahan & Geser</div>
+            <span class="badge">INTERACTIVE</span>
+            <h2>OVERVIEW</h2>
+            <div id="dynamic-overview-text" class="overview-text">
+                <p>Gunakan tombol <strong>Filter Data</strong> di atas untuk menyesuaikan data yang ingin kamu lihat.</p>
+                <p>Data akan otomatis ter-update dengan animasi yang halus! ✨</p>
+            </div>
+            <div class="overview-footer">
+                <span class="vibe-text">Vibe: Navy & Blue Sky</span>
+                <span id="overview-total-sales" class="total-sales">$0</span>
+            </div>
+        </div>
+
+        <!-- Floating Legend Card (Right Side) -->
+        <div class="legend-card">
+            <div class="drag-hint">Tahan & Geser</div>
+            <h3>📖 PANDUAN GRAFIK</h3>
+            <div class="legend-content">
+                <p><strong>Skala Lingkaran:</strong></p>
+                <p>Besar kecilnya gelembung mewakili <em>Value</em> (Total Uang / Penjualan). Semakin besar lingkaran, semakin besar nilai penjualannya!</p>
+                
+                <p style="margin-top: 12px;"><strong>Kode Warna Kategori:</strong></p>
+                <ul class="legend-colors">
+                    <li><span class="color-dot" style="background-color: #06B6D4;"></span> Technology (Cyan)</li>
+                    <li><span class="color-dot" style="background-color: #F43F5E;"></span> Furniture (Rose)</li>
+                    <li><span class="color-dot" style="background-color: #F59E0B;"></span> Office Supplies (Amber)</li>
+                    <li><span class="color-dot" style="background-color: #94A3B8;"></span> Lainnya (Abu-abu)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="main-content">
+            <div id="chart-container" class="chart-container">
+                <!-- D3 SVG will be appended here -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
