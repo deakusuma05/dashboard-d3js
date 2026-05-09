@@ -30,7 +30,7 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
     cursor: none;
     /* Custom cursor */
 }
@@ -479,7 +479,7 @@ label,
 .main-content {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     /* start from top instead of centering */
     width: 100vw;
@@ -492,10 +492,8 @@ label,
 .chart-container {
     width: 100%;
     min-height: 800px;
-    /* explicit min height for large tree */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: block;
+    text-align: center;
 }
 
 /* D3 Elements */

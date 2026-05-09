@@ -18,15 +18,20 @@ export function renderRadialTree(data, containerId) {
     const radius = Math.max(400, (width - 700) / 2); 
     const svgHeight = radius * 2 + margin.top + margin.bottom + 120; // Ensure enough vertical space
 
+    // Calculate required width to prevent clipping text labels
+    const svgWidth = Math.max(width, radius * 2 + 400);
+
     const tooltip = d3.select("body").append("div")
         .attr("id", "d3-tooltip")
         .attr("class", "d3-tooltip");
 
     const svg = d3.select(`#${containerId}`).append("svg")
-        .attr("width", width)
+        .attr("width", svgWidth)
         .attr("height", svgHeight)
+        .style("display", "block")
+        .style("margin", "0 auto")
         .append("g")
-        .attr("transform", `translate(${width / 2},${svgHeight / 2})`);
+        .attr("transform", `translate(${svgWidth / 2},${svgHeight / 2})`);
 
     const tree = d3.tree()
         .size([2 * Math.PI, radius])
